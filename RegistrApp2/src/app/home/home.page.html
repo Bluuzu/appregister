@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio de sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="body" [fullscreen]="true">
+  <div id="contains">
+    <div class="input1">
+      <ion-input name="user" label="Usuario" [(ngModel)]="username" label-placement="floating"></ion-input>
+<ion-input name="pass" label="Contraseña" type="password" [(ngModel)]="password" label-placement="floating"></ion-input>
+<ion-button  expand="block" (click)="validateLog()">iniciar sesion</ion-button>
+
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div>
+    <a> ¿Olvidaste tu contraseña? </a>
+  </div>
+  <div>
+    <a>Copyright Belen</a>
+  </div>
+</ion-footer>
